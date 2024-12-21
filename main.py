@@ -45,3 +45,15 @@ print("\nFuncional:")
 print(f"Pontos por time: {[f'{time["time"]}: {pontuacao}' for time, pontuacao in zip(partidas, pontos)]}")
 print(f"Times com mais de 30 pontos: {[time["time"] for time in times_acima_30]}")
 print(f"Média de pontos: {media_pontos:.2f}")
+
+
+# Relatório   
+# Problema:
+# Analisar o desempenho de times de futebol com base em vitórias, empates e derrotas, extraindo insights como
+# pontuação total, times destacados com mais de 30 pontos e a média de pontos dos times.
+#
+# Vantagem da implementação funcional:
+# - Redução do código boilerplate: as funções map, filter e reduce encapsulam operações comuns, reduzindo a repetição.
+# - Maior legibilidade: o código funcional é mais direto e expressa claramente a lógica de cada transformação.
+# - Modularidade: as funções de alta ordem podem ser reutilizadas e combinadas de forma flexível.
+# - Potencial para paralelismo: em alguns contextos, o paradigma funcional facilita a execução em paralelo, otimizando o desempenho.
